@@ -1,0 +1,88 @@
+.fortune_cookie__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  background: linear-gradient(120deg, #f5e8c8 0%, #fffbe9 100%);
+  padding: 40px 0;
+}
+
+.fortune_cookie__card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 28px 0 rgba(80, 48, 0, 0.12);
+  padding: 32px 44px 24px 44px;
+  max-width: 410px;
+  text-align: center;
+}
+
+.fortune_cookie__button {
+  background: linear-gradient(90deg, #f6cd61 0%, #f7b733 100%);
+  color: #734d26;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  box-shadow: 0 2px 8px 0 rgba(80, 48, 0, 0.07);
+  cursor: pointer;
+  margin-bottom: 22px;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.fortune_cookie__button:disabled {
+  background: #ffe7ab;
+  color: #bfa76f;
+  cursor: not-allowed;
+}
+
+.fortune_cookie__button:hover:not(:disabled) {
+  background: linear-gradient(90deg, #f7b733 0%, #f6cd61 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+.fortune_cookie__spinner {
+  display: flex;
+  justify-content: center;
+  margin: 18px 0;
+}
+
+.fortune-cookie__spinner-circle {
+  width: 34px;
+  height: 34px;
+  border: 4px solid #f7b733;
+  border-top: 4px solid #fff;
+  border-radius: 50%;
+  animation: spin 0.95s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.fortune_cookie__error {
+  color: #c0392b;
+  font-weight: 600;
+  margin: 13px 0;
+}
+
+.fortune_cookie__phrase {
+  color: #8e540a;
+  font-size: 1.22rem;
+  font-family: "Merienda", cursive, sans-serif;
+  margin-top: 22px;
+  margin-bottom: 8px;
+  min-height: 32px;
+  transition: color 0.3s;
+}
+
+.fortune_cookie__lucky {
+  color: #af9500;
+  font-size: 1.05rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0;
+  opacity: 0.95;
+}
