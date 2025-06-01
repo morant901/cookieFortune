@@ -119,6 +119,35 @@ README.md
 ¡Se aceptan PRs y sugerencias!  
 Por favor abre un [issue](https://github.com/morant901/cookieFortune/issues) para reportar bugs o solicitar nuevas funcionalidades.
 
+## Adicional Site editor
+
+Adicionalmente se creo el schema para poder modificar desde site editor algunos textos u ocultar los números de la suerte por si solo quieres ver las frases.
+
+```json
+FortuneCookie.schema = {
+  title: 'Galleta de la Fortuna',
+  description:
+    'Componente que muestra una frase aleatoria y números de la suerte.',
+  props: {
+    buttonLabel: {
+      type: 'string',
+      title: 'Texto del botón',
+      default: 'Obtener fortuna',
+    },
+    loadingLabel: {
+      type: 'string',
+      title: 'Texto de carga',
+      default: 'Obteniendo...',
+    },
+    showLuckyNumber: {
+      type: 'boolean',
+      title: 'Mostrar número de la suerte',
+      default: true,
+    },
+  },
+}
+```
+
 ## Licencia
 
-MIT
+Esto es solo mio pero lo pueden usar si quieren!
